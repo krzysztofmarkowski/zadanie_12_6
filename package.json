@@ -1,0 +1,31 @@
+{
+  "name": "zadanie_12_6",
+  "version": "1.0.0",
+  "description": "Zadanie 12.6 - Wyszukiwarka krajów",
+  "main": "gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krzysztofmarkowski/zadanie_12_6.git"
+  },
+  "keywords": [
+    "zadanie",
+    "12.6",
+    "kodilla"
+  ],
+  "author": "Krzysztof Markowski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krzysztofmarkowski/zadanie_12_6/issues"
+  },
+  "homepage": "https://github.com/krzysztofmarkowski/zadanie_12_6#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-imagemin": "^2.0.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^2.0.0"
+  }
+}
