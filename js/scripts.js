@@ -13,16 +13,19 @@ function searchCountries() {
   $.ajax({
     url: url + countryName,
     method: 'GET',
-    success: showCountriesList,
-    error: function() {
-      countriesList = 'Nothing...';
-    }
+    success: showCountriesList
   });
 }
 
 function showCountriesList(resp) {
+  var coutry = "";
   countriesList.empty();
   resp.forEach(function(item){
-    $('<li>').text(item.name).appendTo(countriesList);
+    country = $('<li>').text(' ');
+    $('<p class="name">').text('Country: ' + item.name).appendTo(country);
+    $('<p>').text('Language: ' + item.languages).appendTo(country);
+    $('<p>').text('Population: ' + item.population).appendTo(country);
+    $('<p>').text('Region: ' + item.region).appendTo(country);
+    country.appendTo(countriesList);
   });
 }
